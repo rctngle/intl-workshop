@@ -1,0 +1,107 @@
+body {
+	font-family: Helvetica, sans-serif;
+	margin: 0 auto;
+	line-height: 1.4;
+	overflow: hidden;
+}
+
+table {
+	width: 100%;
+}
+
+th, td {
+	border: 1px solid #CCC;
+	padding: 5px;
+	text-align: left;
+}
+
+h4 {
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #999;
+	margin: 0;
+}
+
+h1 {
+	margin: 0;
+}
+
+p {
+	font-family: monospace;
+	font-size: 12px;
+}
+
+.tabletop {
+	width: 100vw;
+	height: 100vh;
+	background: #ddd;
+	position: relative;
+}
+
+.image {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	width: 12vw;
+	overflow: hidden;	
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.image.Landscape {
+	width: 15vw;
+}
+
+.image img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 6px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+}
+
+.image:hover {
+	background: #222;
+	z-index: 1;
+}
+
+.image:hover .meta {
+	opacity: 1;	
+}
+
+.meta {
+	transition: 100ms opacity;
+	opacity: 0;
+	font-family: monospace;
+	color: #fff;
+	font-size: 10px;
+	padding: 10px 0 0 0;
+}
+
+.meta-row {
+	display: grid;
+	grid-template-columns: 60px 1fr;
+	margin-bottom: 2px;
+	align-items: center;
+}
+
+
+.sidebar {
+	position: absolute;
+	z-index: 1;
+	width: 260px;
+	padding: 30px;
+}
+
+.swatches {
+	display: flex;
+}
+
+
+.swatches div {
+	width: 0.7rem;
+	height: 0.7rem;
+
+}
+
+
+
