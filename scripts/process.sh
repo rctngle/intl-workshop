@@ -2,7 +2,7 @@
 
 # Define output CSV file and image folder
 output_file="image_data.csv"
-image_folder="./medium"
+image_folder="../media"
 
 # Write CSV header
 echo "Filename,Date/Time,Latitude,Longitude,DominantColor,AverageColor,Orientation" > "$output_file"
@@ -11,7 +11,7 @@ echo "Filename,Date/Time,Latitude,Longitude,DominantColor,AverageColor,Orientati
 for image in "$image_folder"/*.{jpg,jpeg,png}; do
   # Skip if no matching files
   [ -e "$image" ] || continue
-
+  echo $image
   # Get filename
   filename=$(basename "$image")
 
